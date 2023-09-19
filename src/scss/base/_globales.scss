@@ -1,0 +1,125 @@
+@use "mixins" as m;
+
+$naranja : hsl(31, 77%, 52%);
+$azul : hsl(184, 100%, 22%);
+$verde : hsl(179, 100%, 13%);
+$fuente-parrafo-1: "Big Shoulders Display";
+$fuente-parrafo-2: "Lexend Deca";
+$fondo-blanco-transp: hsla(0, 0%, 100%, 0.75);
+$fondo-laygray-transp: hsl(0, 0%, 95%);
+
+
+html {
+    font-size: 62.5%; //PARA QUE 1 REM SEA = 10PX
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit; //PARA QUE EL PADDIN NO PRESENTE UN PROBLEMA
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: $fondo-laygray-transp;
+}
+
+p {
+    font-size: 2rem;
+    color: white;
+    line-height: 1.5; //espaciado entre fila y fila
+    margin-bottom: 8rem;
+    font-family: $fuente-parrafo-2;
+    color: $fondo-blanco-transp;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 110rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    background-color: $fondo-laygray-transp;
+    padding: 2rem 5.5rem;
+    border-radius: 30px 30px 30px 30px;
+    font-family: $fuente-parrafo-2;
+
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 5rem 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+    color: white;
+    text-transform: uppercase;
+    font-family: $fuente-parrafo-1;
+    color: $fondo-laygray-transp;
+
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+img {
+    max-width: 100%;
+    display: block; //para que se ajusten las imagenes
+    width: 25%;
+    height: auto;
+    margin-bottom: 3.5rem;
+}
+
+
+
+.bg-naranja {
+    background-color: $naranja;
+
+    a {
+        color: $naranja;
+
+        &:hover {
+            background-color: $naranja;
+            color: $fondo-blanco-transp;
+            border: white solid 2px;
+        }
+    }
+}
+
+.bg-azul {
+    background-color: $azul;
+
+    a {
+        color: $azul;
+
+        &:hover {
+            background-color: $azul;
+            color: $fondo-blanco-transp;
+            border: white solid 2px;
+        }
+    }
+}
+
+.bg-verde {
+    background-color: $verde;
+
+    a {
+        color: $verde;
+
+        &:hover {
+            background-color: $verde;
+            color: $fondo-blanco-transp;
+            border: white solid 2px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@use '../base/globales' as v;
+@use '../base/mixins' as m;
+
+
+
+.columnas{
+    margin-top: 15rem;
+   
+    
+    @include m.tablet{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+
+.columna{
+    padding: 6rem;
+
+    @include m.telefono {
+        padding: 8rem;
+    }
+
+    @include m.tablet {
+        padding: 6rem;
+
+    }
+}
